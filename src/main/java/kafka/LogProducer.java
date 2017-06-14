@@ -56,7 +56,7 @@ public class LogProducer {
 
             ProducerConfig config = new ProducerConfig(props);
 
-            Producer<String, String> producer = new Producer<String, String>(config);
+            Producer<String, String> producer = new Producer<>(config);
 
             while (true) {
                 logProducer.sentKafkaSignal(producer, TOPIC);
