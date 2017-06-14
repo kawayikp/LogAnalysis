@@ -18,8 +18,8 @@ import kafka.producer.ProducerConfig;
 public class LogProducer {
 
 
-// java -cp hadoopsummit2016-0.0.1-SNAPSHOT.jar com.hortonworks.ZeroDowntimeDeployment.Kafka.LogProducer gwy-wwang.cloud.hortonworks.com:6667 nn1-wwang.cloud.hortonworks.com:2181 acclog-simulation ./acclog_dev.log
-// /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --zookeeper nn1-wwang.cloud.hortonworks.com:2181 --topic acclog-simulation --from-beginning
+//java -cp oceanview-0.0.1-SNAPSHOT.jar kafka.LogProducer node1:6667 node1:2181 test /home/vagrant/LogAnalysis/src/main/resources/acclog_dev.log
+// /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --zookeeper node1:2181 --topic test --from-beginning
 
     // java -cp hadoopsummit2016-0.0.1-SNAPSHOT.jar com.hortonworks.ZeroDowntimeDeployment.Kafka.LogProducer gwy-wwang.cloud.hortonworks.com:6667 nn1-wwang.cloud.hortonworks.com:2181 applog-simulation ./applog_dev.log
 // /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --zookeeper nn1-wwang.cloud.hortonworks.com:2181 --topic applog-simulation --from-beginning
